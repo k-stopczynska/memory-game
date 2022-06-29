@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgb(230, 142, 84), rgb(243, 62, 180));
+}
+.container {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: grey;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.active {
+    opacity: .4;
+    background: rgb(243, 62, 180);
+}
